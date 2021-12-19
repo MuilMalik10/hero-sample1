@@ -46,7 +46,7 @@ body {
   height: calc(100vh - 100px);
   justify-content: center;
   align-items: center;
-  background-image: url(/assets/img/wave.png);
+  background-image: url(./assets/img/wave.png);
   background-repeat: no-repeat;
   background-position: bottom center;
 }
