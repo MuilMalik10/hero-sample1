@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  height: 100px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.navbar ul a {
+  display: inline-block;
+  padding: 0 20px;
+  text-decoration: none;
+  color: rgb(55, 25, 165);
+}
+
+.navbar ul a::after {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 3px;
+  background-color: blueviolet;
+  transition: all .5s;
+}
+
+.navbar ul a:hover::after {
+  width: 100%;
+}
+
+.hero {
+  display: flex;
+  height: calc(100vh - 100px);
+  justify-content: center;
+  align-items: center;
+  background-image: url(/assets/img/wave.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.hero-desc {
+  width: 30%;
+}
+
+.hero-desc h1 {
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: rgb(236, 94, 58);
+}
+
+.hero-desc p {
+  color: rgb(55, 25, 165);
+  line-height: 2em;
+  margin-bottom: 15px;
+}
+
+.hero-image img {
+  max-width: 680px;
+}
+
+
+#cta-button {
+  border-radius: 15px;
+  background-color: rgb(55, 25, 165);
+  color: #fff;
+  padding: 5px 20px;
+  border: none;
+  outline: none;
+}
